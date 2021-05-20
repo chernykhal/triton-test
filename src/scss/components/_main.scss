@@ -1,0 +1,16 @@
+.main {
+  background-color: $background;
+  height: 100%;
+}
+
+@media (min-width: 320px) {
+  .main {
+    padding: 20px 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .main {
+    padding: 20px 150px;
+  }
+}

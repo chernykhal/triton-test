@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: center;
+  background: $white;
+
+  &__logo {
+    font-size: 2rem;
+  }
+
+  .menu {
+    &__list {
+      display: grid;
+      grid-template-columns: auto auto;
+      align-items: center;
+    }
+
+    &__item {
+    }
+
+    &__link {
+      &--cart {
+        padding: 10px 20px;
+        background: $black;
+        border-radius: 15px;
+        color: $white;
+      }
+
+      &:hover {
+        color: darken($white, 25%);
+      }
+
+      &:focus {
+        box-shadow: 0 0 3pt 2pt darken($white, 50%);
+      }
+    }
+  }
+}
